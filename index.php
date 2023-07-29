@@ -27,8 +27,10 @@ $conn = OpenCon();
     ?>
     <div class="content centeredText">
         <h1>Clicker Game</h1>
-        <button id="mainbutton">Click Me</button>
-        <script>mainbutton.addEventListener("click", addone, false);</script>
+        <button id="mainbutton">start main loop</button>
+        <script>mainbutton.addEventListener("click", startloop, false);</script>
+        <button id="secondbutton">stop main loop</button>
+        <script>secondbutton.addEventListener("click", stoploop, false);</script>
     </div>
 </body>
 </html>

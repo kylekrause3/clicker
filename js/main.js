@@ -1,31 +1,25 @@
-function update(progress){
+//var to store interval id
+let intervalID;
 
-}
-
-function draw() {
-
-}
 let y = 0;
+
 function loop(timestamp) {
-    var progress = timestamp - lastRender;
-    
-    update(progress);
-    draw();
-
-    lastRender = timestamp;
-    //window.requestAnimationFrame(loop);
-
     console.log(y);
     y++;
 }
 
-var lastRender = 0;
-var fps = 30;
-//window.requestAnimationFrame(loop);
-
+let lastRender = 0;
+let fps = 30;
 
 function startloop(){
-    setInterval(loop, 1000/fps);
+    if(!intervalID){
+        intervalID = setInterval(loop, 1000/fps);
+    }
+}
+
+function stoploop(){
+    clearInterval(intervalID);
+    intervalID = null;
 }
 
 
@@ -35,3 +29,9 @@ function addone(){
     x++;
     console.log(x);
 }
+
+/*
+
+send cookies with ajax request that says to update database with new data, then avoids conn
+
+*/
