@@ -5,7 +5,7 @@ function update(progress){
 function draw() {
 
 }
-
+let y = 0;
 function loop(timestamp) {
     var progress = timestamp - lastRender;
     
@@ -14,12 +14,20 @@ function loop(timestamp) {
 
     lastRender = timestamp;
     //window.requestAnimationFrame(loop);
+
+    console.log(y);
+    y++;
 }
 
 var lastRender = 0;
 var fps = 30;
 //window.requestAnimationFrame(loop);
-setInterval(loop, 1000/fps);
+
+
+function startloop(){
+    setInterval(loop, 1000/fps);
+}
+
 
 let x = 0;
 
