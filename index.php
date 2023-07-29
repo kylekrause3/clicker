@@ -21,6 +21,12 @@ $conn = OpenCon();
     <p class="content">MySQL Table:</p>
     <?php
     echo '<div class="content">';
+        /*
+        COLUMN   DATA TYPE
+        id       int
+        username varchar(30)
+        clicks   int
+        */
         displayTable($conn, 'clickerdata');
     echo '</div>';
     CloseCon($conn);

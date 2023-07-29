@@ -1,4 +1,5 @@
 <?php
+    // doesn't work rn, fix after getting ajax requests working
     function updateTable($conn, $table, $name1, $val1, $name2, $val2){
         $q = "UPDATE ".$table." SET ".$name1." = $val1 WHERE ".$name2." = $val2;";
         $conn->query($q);
