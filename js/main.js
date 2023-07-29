@@ -8,7 +8,6 @@ function loop(timestamp) {
     y++;
 }
 
-let lastRender = 0;
 let fps = 30;
 
 function startloop(){
