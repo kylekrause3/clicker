@@ -13,11 +13,13 @@ $conn = OpenCon();
 <head>
     <link rel="stylesheet" href="css\styles.css">
     <script type="text/javascript" src="js\main.js"></script>
+    
+    <p class="centeredText"> Email: kyle@untethered.biz&emsp;<a href="https://untethered.biz/">https://untethered.biz/</a></p>
 </head>
 <body>
     <p class="content">MySQL Table:</p>
     <?php
-    echo '<div class="content mysqltable">';
+    echo '<div class="content">';
         $q = "SELECT * FROM clickerdata;";
         $result = $conn->query($q);
 
